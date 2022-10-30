@@ -1,0 +1,15 @@
+import java.util.Scanner;
+import java.util.*;
+
+public class Reapated_String_char {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);	//here we creating Scanner object
+		System.out.println("enter the string");
+		String str=sc.nextLine();	//if u want to take string use string datatype and use nextline because it read next word after space or tab etc...
+		
+		
+	}
+
+}

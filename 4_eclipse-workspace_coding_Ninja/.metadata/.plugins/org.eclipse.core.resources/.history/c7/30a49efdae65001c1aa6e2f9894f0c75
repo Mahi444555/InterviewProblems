@@ -1,0 +1,42 @@
+package SEARCHING_PROGRAMS;
+import java.util.Scanner;
+public class SOLUTION {
+
+public static int match(int arr[],int x)
+{
+	int n=arr.length-1;		//assigning array length to the n using .length function
+	for(int i=0;i<=n-1;i++)
+	{
+		if(x == arr[i])
+			return i;
+	}
+	return -1;
+}
+
+public static int[] takeInput()
+{
+	Scanner sc=new Scanner(System.in);
+	int n=sc.nextInt();
+	int arr[]=new int[n];//declaration of an array 
+	for(int i=0;i<=arr.length-1;i++)
+	{
+		arr[i]=sc.nextInt();	//here we taking an array elements from system
+	}
+	return arr;	//here we returning an array hence taken return type of function int[] 
+	
+}
+public static void main(String args[])
+{
+	Scanner sc=new Scanner(System.in);
+	int t=sc.nextInt();
+	int i=1;
+
+	while(i<=t)	//where t is no of test cases will be run 
+	{
+		int m[]=takeInput();	//takeInput function will return an array hence m will be m[]
+		int x=sc.nextInt();
+		int result=match(m,x);
+		System.out.print(result+"\t");
+	}
+}
+}

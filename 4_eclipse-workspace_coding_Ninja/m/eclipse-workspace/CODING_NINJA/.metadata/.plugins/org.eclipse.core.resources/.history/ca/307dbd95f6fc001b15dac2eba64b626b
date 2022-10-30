@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class SortZeroANDone {
+
+	public static void main(String[] args) {
+		 
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int arr[]=new int[N];		//my array passing size as N 
+		for(int m=0;m<=N-1;m++)
+		{
+			arr[m]=sc.nextInt();
+		}
+		
+		int i=0;
+		int j=N-1;
+		
+		while(i<j)
+		{
+			int currentleftelement=arr[i];		//leftIndex=0
+			int currentrightelement=arr[j];		//rightIndex=n-1
+			
+			if(currentleftelement==0)
+			{
+				i++;
+			}
+			if(currentrightelement==1)
+			{
+				j--;
+			}
+				if(currentleftelement == 1 && currentrightelement == 0)
+				{
+					arr[i]=currentrightelement;
+					arr[j]=currentleftelement;
+					i++;
+					j--;
+				}
+		}
+		for(int k=0; k<N;k++)
+		{
+			System.out.print(arr[k]+" ");
+		}
+
+	}
+
+}

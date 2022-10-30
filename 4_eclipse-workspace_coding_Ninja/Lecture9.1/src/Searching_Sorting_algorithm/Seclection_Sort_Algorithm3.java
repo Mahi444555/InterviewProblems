@@ -1,0 +1,39 @@
+package Searching_Sorting_algorithm;
+import java.util.Scanner;
+public class Seclection_Sort_Algorithm3 {
+
+	public static void SelectionSort(int arr[]) {
+		
+		int n=arr.length;		
+								
+		for(int i=0;i<n-1;i++)	 
+		{
+			//int min=i;		
+			for(int j=i+1;j<n;j++) {
+				
+				if(arr[j] < arr[i])	
+				{
+					//min=j;	
+				//}
+			//}
+			int temp=arr[j];
+			arr[j]=arr[i];
+			arr[i]=temp;}}
+		}
+		for(int i=0;i<n;i++) {
+			System.out.print(arr[i]+" ");
+		}
+		
+	}
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int arr[]=new int[N];		
+		for(int i=0; i<N;i++)
+		{
+			arr[i]=sc.nextInt();		
+		}
+		SelectionSort(arr);		
+	}
+
+}

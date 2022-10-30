@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;SEARCHING_PROGRAMS.SOLUTION&apos; to &apos;Leaner_Search1&apos;&#x0D;&#x0A;- Original project: &apos;SEARCHING_SORTING&apos;&#x0D;&#x0A;- Original element: &apos;SEARCHING_PROGRAMS.SOLUTION&apos;&#x0D;&#x0A;- Renamed element: &apos;SEARCHING_PROGRAMS.Leaner_Search1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SOLUTION&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;SEARCHING_PROGRAMS{SOLUTION.java[SOLUTION" matchStrategy="1" name="Leaner_Search1" qualified="false" references="true" similarDeclarations="false" stamp="1640504798280" textual="false" version="1.0"/>
+</session>

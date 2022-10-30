@@ -1,0 +1,51 @@
+package forLoops;
+import java.util.Scanner;		//header files
+public class Sum_till_N {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		//int n=sc.nextInt();
+	int sum=0;
+/*	while(i<=n)		//iterate till n
+//		{
+//			sum=sum+i;
+//			i++;
+//		}
+	System.out.println(sum);
+*/		
+		
+//		for(i=1;i<=n;i++)
+//		{
+//			sum=sum+i;
+//			
+//		}
+//		System.out.println(sum);
+//		o/p =if n=5 then 55
+	
+	
+//	
+//	for(int i = 0; i < 5; i = i + 1){
+//	    System.out.print(i + " ");
+//	    i = i + 1;
+//		o/p= 0 2 4
+		
+//	for(int i = 1; i < 5; i = i + 1){
+//	    System.out.print(i +" ");
+//	    i = i - 1;
+
+//					}
+	// o/p= infinite 1's 
+	
+	
+	for(int i = 0; i < 2; i = i + 1) {
+	     for(int j = 0; j < 2; j = j + 1) {
+	          if (j == 1)
+	              break;
+	          System.out.print(j +" ");
+	
+	     	}  
+	
+	}
+  }
+}

@@ -1,0 +1,58 @@
+package HomeWork;
+
+import java.util.Scanner;
+
+public class secondLargestELEMENT3 {
+
+	public static int[] SelectionSort(int arr[])
+	{
+		int n=arr.length;
+		for(int i=0;i<n-1;i++) 
+		{
+			int min=i;	
+			for(int j=i+1;j<n;j++)
+			{
+				if(arr[j] < arr[min])
+				{
+					min=j;
+				}
+			}
+			
+			int temp=arr[i];
+			arr[i]=arr[min];	//directly swap
+			arr[min]=temp;
+		}
+		return arr;
+	}
+	
+	public static void SecondLar(int arr[]) {
+		
+		int n=arr.length;
+		//for(int i=0;i<n;i++)
+		{
+			System.out.print(arr[n-2]+" ");
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		int q=1;
+		
+		while(q<=t)
+		{
+		 int n=sc.nextInt();
+		 int arr[]=new int[n];
+			for(int i=0;i<n;i++)
+			  {
+				arr[i]=sc.nextInt();	
+			  }
+			
+			int s[]=SelectionSort(arr);	//calling SelectionSort function and passing unsorted array it will return sorted
+				SecondLar(s);		//calling SecondLar function and passing sorted array
+			q++;	
+		}
+	}
+
+}

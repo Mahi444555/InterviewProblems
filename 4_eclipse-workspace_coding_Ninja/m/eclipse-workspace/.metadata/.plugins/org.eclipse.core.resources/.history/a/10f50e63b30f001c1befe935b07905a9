@@ -1,0 +1,19 @@
+//program for roate array by d times 
+
+package practiceHW;
+import java.util.Scanner;
+public class moveZeroToEND {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int d=sc.nextInt();	//these d is array rotate by d tiems
+		int n=sc.nextInt();
+		int arr[]=new int[n];
+		for(int i=0;i<n;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+		rotate
+	}
+
+}

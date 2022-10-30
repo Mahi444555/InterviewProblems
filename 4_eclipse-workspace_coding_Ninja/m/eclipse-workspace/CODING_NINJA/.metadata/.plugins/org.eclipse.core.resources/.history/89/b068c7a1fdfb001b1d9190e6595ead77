@@ -1,0 +1,50 @@
+package SelectoinSort;
+import java.util.Scanner;		//header files for Scanner funciton
+public class SortArrayUsingSelectionSORT {
+	
+	public static void selectionSort(int arr[]) {
+		
+		int n=arr.length;	//accesing array length using array_name.length
+		
+		for(int i=0;i<n-1;i++)		//i<n-1 i.e. it will iterate till if n=7 then only 0 to 5 
+		{                            //becaues last element of array get automatically sort
+		
+			int min=i;	//let consider now our 0th index element is minimum hece storing index of that in min
+			
+			for(int j=i+1;j<n;j++)	//to compare with i, j will start from next num i.e. i+1
+			{
+				if(arr[j]<arr[min]) //1st no i.e. storing in min is greater than 2nd no then we 
+				{						// just replace min  to 2nd num/minimum no's index  
+					
+					min=j;		// where j is storing smallest element index and assign to min
+				}
+			}
+							//swapping 
+			int temp=arr[i];	//now assing 1st no to temp
+				arr[i]=arr[min];
+				arr[min]=temp;	
+		}
+		
+		for(int i=0;i<n;i++)
+		{
+			System.out.print(arr[i]+" ");
+		}
+	}
+	
+	
+	//from here my main start which we use to pass array to function
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		int arr[]=new int[N];		//my_array arr[] passing N as size of array and new is keyword
+											//that allocates the memory to us
+		for(int m=0;m<=N-1;m++)
+		{
+			arr[m]=sc.nextInt();
+		}
+		selectionSort(arr);		//calling fucntion and passing array 
+		
+	}
+
+}
